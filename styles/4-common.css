@@ -1,0 +1,33 @@
+/* Global Body style */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(/images/sofa.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: black;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  background-color: rgba(0, 0, 0, 1);
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Adjust the alpha value for opacity */
+  z-index: -1; /* Ensure the overlay is above the background image */
+}
+
+.container {
+  max-width: 1000px;
+  margin: 30px auto;
+  z-index: 1; /* Ensure your content is above the overlay */
+}
